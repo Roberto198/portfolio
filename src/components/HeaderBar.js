@@ -77,14 +77,6 @@ export default function HeaderBarContent() {
                     >
                         CONTACT
                     </Button>
-
-                    <Button
-                        component={Link}
-                        to={"/photo"}
-                        className={classes.menuButton}
-                    >
-                        PHOTOS
-                    </Button>
                 </div>
             )}
             {!matches && (
@@ -127,14 +119,6 @@ export default function HeaderBarContent() {
                             onClick={handleClose}
                         >
                                 CONTACT
-                        </MenuItem>
-                        <MenuItem 
-                            component={Link}
-                            to={"/photo"}
-                            className={classes.menuButton}
-                            onClick={handleClose}
-                        >
-                                PHOTOS
                         </MenuItem>
                     </Menu>
                 </div>
