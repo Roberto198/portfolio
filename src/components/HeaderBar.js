@@ -110,7 +110,7 @@ export default function HeaderBarContent() {
                             className={classes.menuButton}
                             onClick={handleClose}
                         >
-                                CERTIFICATIOM
+                                CERTIFICATION
                         </MenuItem>
                         <MenuItem 
                             component={Link}

@@ -32,7 +32,10 @@ const useStyles = makeStyles((theme) =>
             background: "#F7F9FF",
             margin: "1em",
         },
-        titleBlurb: {},
+        link: {
+            textDecoration: 'none'
+
+        },
         titleName: {
             paddingTop: "1em",
         },
@@ -91,12 +94,9 @@ export default function Main() {
                 </p>
                 <p>
                     To view these and other accreditations, please visit my{" "}
-                    <Link to={"/cert"}>certification</Link> page, or you can see
+                    <Link to={"/cert"} className={classes.link}>certification</Link> page, or you can see
                     more detailed technical experience in the{" "}
-                    <Link to={"/experience"}> experience</Link> page.
-                    Alternatively if you would like to view some of my
-                    photography then please feel free to check out my{" "}
-                    <Link to={"/photo"}>photography</Link> page, thanks!
+                    <Link to={"/experience"} className={classes.link}> experience</Link> page.
                 </p>
             </div>
         </div>
